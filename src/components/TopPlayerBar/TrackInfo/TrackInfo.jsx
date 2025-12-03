@@ -6,7 +6,7 @@ const TrackInfo = ({track}) => {
         return (
             <div className={classes.placeholder}>
                 <img
-                    src="/icons/apple-logo.png"
+                    src="icons/apple-logo.png"
                     className={classes.appleLogo}
                     alt=""
                     aria-hidden="true"

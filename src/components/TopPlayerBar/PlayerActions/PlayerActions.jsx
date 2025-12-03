@@ -6,7 +6,7 @@ const PlayerActions = () => {
         <div className={classes.actions}>
             <button>
                 <img
-                    src="/icons/lyrics.png"
+                    src="icons/lyrics.png"
                     className={classes.lyrics}
                     alt=""
                     aria-hidden={true}
@@ -14,7 +14,7 @@ const PlayerActions = () => {
             </button>
             <button>
                 <img
-                    src="/icons/queue.png"
+                    src="icons/queue.png"
                     className={classes.queue}
                     alt=""
                     aria-hidden={true}
@@ -22,7 +22,7 @@ const PlayerActions = () => {
             </button>
             <button>
                 <img
-                    src="/icons/account.png"
+                    src="icons/account.png"
                     className={classes.account}
                     alt=""
                     aria-hidden={true}

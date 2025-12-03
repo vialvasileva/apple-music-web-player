@@ -7,7 +7,7 @@ const SidebarHeader = () => {
     return (
         <div className={classes.sidebarHeader}>
             <SidebarItem
-                icon="/icons/apple-logo.png"
+                icon="icons/apple-logo.png"
                 label="Music"
                 onClick={() => console.log("apple-music")}
                 mode="header"

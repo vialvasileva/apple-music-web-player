@@ -5,7 +5,7 @@ const PlayerVolume = () => {
     return (
         <div className={classes.volume}>
             <img
-                src="/icons/volume.png"
+                src="icons/volume.png"
                 className={classes.icon}
                 alt=""
                 aria-hidden={true}
