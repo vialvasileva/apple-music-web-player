@@ -1,0 +1,48 @@
+.sidebarItem {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 8px 12px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.default {
+    font-size: 14px;
+    font-weight: 500;
+    gap: 12px;
+    color: inherit;
+}
+
+.header {
+    font-size: 25px;
+    font-weight: 500;
+    gap: 0;
+    color: inherit;
+}
+
+.footer {
+    font-size: 13px;
+    font-weight: 300;
+    gap: 4px;
+    color: #b1b1b1;
+}
+
+.icon {
+    display: block;
+    object-fit: contain;
+}
+
+.icon.default {
+    width: 20px;
+}
+
+.icon.header {
+    width: 19px;
+}
+
+.icon.footer {
+    width: 25px;
+}

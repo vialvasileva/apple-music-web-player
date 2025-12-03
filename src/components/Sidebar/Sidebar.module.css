@@ -1,0 +1,15 @@
+.sidebar {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #262627;
+    color: #ededed;
+    border-right: 1px solid #3b3b3c;
+}
+
+.scrollArea {
+    flex: 1 1 auto;
+    overflow-y: auto;
+}

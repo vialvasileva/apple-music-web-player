@@ -1,0 +1,17 @@
+.scrollRow {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: visible;
+    scrollbar-width: none;
+    padding-bottom: 12px;
+}
+
+.scrollRow::-webkit-scrollbar {
+    display: none;
+}
+
+.loading {
+    color: #aaa;
+    font-size: 14px;
+}

@@ -1,0 +1,16 @@
+.content {
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+
+    padding: 36px;
+
+    background: #1f1f1f;
+    color: #ededed;
+}
+
+.pageTitle {
+    margin-bottom: 40px;
+}

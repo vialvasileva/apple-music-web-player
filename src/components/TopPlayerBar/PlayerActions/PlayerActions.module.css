@@ -1,0 +1,26 @@
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 90px;
+}
+
+.actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #e85b75;
+    font-size: 18px;
+}
+
+.account {
+    width: 25px;
+}
+
+.queue {
+    width: 15px;
+}
+
+.lyrics {
+    width: 18px;
+}

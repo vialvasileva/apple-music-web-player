@@ -1,0 +1,17 @@
+.volume {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 90px;
+}
+
+.range {
+    width: 70px;
+    height: 3px;
+    accent-color: #ababab;
+    cursor: pointer;
+}
+
+.icon {
+    width: 10px;
+}

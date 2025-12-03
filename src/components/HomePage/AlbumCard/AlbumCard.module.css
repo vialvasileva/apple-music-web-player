@@ -1,0 +1,133 @@
+.card {
+    width: 205px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.imageWrapper {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #2b2b2b;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.textBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.title, .artist {
+    font-size: 12px;
+    font-weight: 300;
+    color: #afafaf;
+    line-height: 1.2;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.title {
+    color: #ededed;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.controlBtn {
+    position: absolute;
+    bottom: 12px;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.15);
+    color: white;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity .25s, transform .25s, background .2s;
+}
+
+.card:hover .overlay,
+.cardActive .overlay {
+    opacity: 1;
+}
+
+.card:hover .controlBtn,
+.cardActive .controlBtn {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.cardActive .overlay,
+.cardActive .controlBtn {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.controlBtn:hover {
+    background: #fa586a;
+}
+
+.title:hover,
+.artist:hover {
+    text-decoration: underline;
+}
+
+.playButton {
+    left: 12px;
+    font-size: 16px;
+    padding-left: 2px;
+}
+
+.moreButton {
+    right: 12px;
+}
+
+.menuWrapper {
+    position: absolute;
+    transform: translateY(140%) translateX(100%);
+    z-index: 100;
+}
+
+.moreButtonWrapper {
+    position: absolute;
+    right: 12px;
+}
+
+body.menu-open .card:hover .overlay,
+body.menu-open .card:hover .controlBtn {
+    opacity: 0 !important;
+    transform: scale(0.9) !important;
+}
+
+body.menu-open .card:hover .title,
+body.menu-open .card:hover .artist {
+    text-decoration: none !important;
+}
+
+body.menu-open .cardActive .overlay,
+body.menu-open .cardActive .controlBtn {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+}

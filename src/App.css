@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    display: block;
+}
+
+.appContainer {
+    display: grid;
+    grid-template-columns: 260px auto;
+    grid-template-rows: 55px auto;
+    min-height: 100dvh;
+    height: 100vh;
+}

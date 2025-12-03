@@ -1,0 +1,16 @@
+.navGroup {
+    padding: 10px 20px;
+}
+
+.navGroupTitle {
+    font-size: 10px;
+    font-weight: 500;
+    opacity: 0.7;
+    margin-bottom: 8px;
+    padding-left: 8px;
+}
+
+.navGroupList{
+    list-style: none;
+    padding: 0;
+}
