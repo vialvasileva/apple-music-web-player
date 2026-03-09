@@ -1,6 +1,9 @@
+const ITUNES_API_URL = process.env.REACT_APP_ITUNES_API_URL;
+const ITUNES_COUNTRY = process.env.REACT_APP_ITUNES_COUNTRY;
+
 // Универсальный поиск
-export async function searchItunes(term, entity = "album", limit=25, country = "us") {
-    const url = `https://itunes.apple.com/search?term=${encodeURIComponent(term)}&entity=${entity}&limit=${limit}&country=${country}`;
+export async function searchItunes(term, entity = "album", limit=25, country = ITUNES_COUNTRY) {
+    const url = `${ITUNES_API_URL}?term=${encodeURIComponent(term)}&entity=${entity}&limit=${limit}&country=${country}`;
     const response = await fetch(url);
     return response.json();
 }
